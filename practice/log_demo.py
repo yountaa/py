@@ -12,7 +12,7 @@ args = parser.parse_args()
 logger = logging.getLogger("check_host")
 logger.setLevel(logging.DEBUG)
 fmt = logging.Formatter(
-        "%(asctime)s | %(levelname)-8s | %(name)s | %(message)s",
+        "%(asctime)s | %(levelname)s | %(name)s | %(message)s",
         datefmt="%Y-%m-%d %H:%M:%S"
     )
 
@@ -20,7 +20,7 @@ console = logging.StreamHandler()
 console.setLevel(args.log_level.upper())
 console.setFormatter(fmt)
 
-file = logging.FileHandler(filename="access.log")
+file = logging.FileHandler(filename=f"/home/swaga/py/logs/log_demo.log")
 file.setLevel(logging.DEBUG)
 file.setFormatter(fmt)
 
@@ -58,3 +58,4 @@ logger.debug("Конец проверки хостов")
 logger.info(f"После проверки всех хостов из списка , выяснилось :")
 logger.info(f"Хостов онлайн : {count_up}")
 logger.info(f"Хостов оффлай : {count_down}")
+
