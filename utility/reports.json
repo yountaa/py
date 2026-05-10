@@ -1,0 +1,25 @@
+{
+  "total_errors": 3,
+  "hosts": [
+    "172.16.0.100",
+    "10.0.0.5",
+    "192.168.1.50"
+  ],
+  "details": [
+    {
+      "ip": "172.16.0.100",
+      "level": "ERROR",
+      "message": "Connection refused"
+    },
+    {
+      "ip": "10.0.0.5",
+      "level": "ERROR",
+      "message": "Timeout connecting"
+    },
+    {
+      "ip": "192.168.1.50",
+      "level": "CRITICAL",
+      "message": "Disk failure"
+    }
+  ]
+}
