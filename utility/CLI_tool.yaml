@@ -1,0 +1,7 @@
+services:
+  - name: google
+    url: https://google.com
+  - name: github
+    url: https://github.com
+  - name: fake
+    url: https://thisdomaindoesnotexist12345.com
